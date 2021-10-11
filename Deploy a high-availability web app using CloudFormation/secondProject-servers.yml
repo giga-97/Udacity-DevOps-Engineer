@@ -76,8 +76,8 @@ Resources:
           Action:
           - s3:*
           Resource: "*"
-        Roles:
-        - Ref: S3BucketsRole
+      Roles:
+      - Ref: S3BucketsRole
 
   WebAppLaunchConfig:
     Type: AWS::AutoScaling::LaunchConfiguration
