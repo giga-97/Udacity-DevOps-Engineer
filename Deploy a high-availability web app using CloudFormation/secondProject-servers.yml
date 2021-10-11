@@ -95,6 +95,7 @@ Resources:
           aws s3 cp s3://udagram-896468975337/stylesheet.css .
 
       ImageId: ami-0747bdcabd34c712a
+      IamInstanceProfile: !Ref S3BucketsInstanceProfile
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
